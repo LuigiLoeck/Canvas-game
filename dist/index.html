@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/tsistrike.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>TSI Strike</title>
+    <script type="module" crossorigin src="/assets/index-bd3ea19a.js"></script>
+    <link rel="stylesheet" href="/assets/index-9fdc181b.css">
+  </head>
+  <body>
+    <div id="selectionScreen">
+      <h2>Select Character and Background</h2>
+      <p>Select Character:</p>
+      <div class="options">
+        <input type="radio" name="player" id="player2.png" checked>
+        <label for="player2.png"><img src="./GraveRobber.png" alt="GraveRobber"></label>
+        <input type="radio" name="player" id="player.png">
+        <label for="player.png"><img src="./SteamMan.png" alt="SteamMan"></label>
+      </div>
+
+      <p>Select Background:</p>
+      <div class="options">
+        <input type="radio" name="background" id="forest1" checked>
+        <label for="forest1"><img src="./background/forest1/home.png" alt="forest1"></label>
+        <input type="radio" name="background" id="forest2">
+        <label for="forest2"><img src="./background/forest2/home.png" alt="forest2"></label>
+        <input type="radio" name="background" id="gardens">
+        <label for="gardens"><img src="./background/gardens/home.png" alt="gardens"></label>
+        <input type="radio" name="background" id="desert">
+        <label for="desert"><img src="./background/desert/home.png" alt="desert"></label>
+      </div>
+      <p>Controls</p>
+      <p>WASD - Movement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Space - Attack</p>
+
+      <button id="startButton">Start Game</button>
+    </div>
+    <canvas id="canvas1"></canvas>
+    
+  </body>
+</html>
