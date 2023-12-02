@@ -53,7 +53,7 @@ export class FlyingEnemy extends Enemy {
     this.height = 96
     this.x = this.game.width + Math.random() * this.game.width * 0.5
     this.y = Math.random() * this.game.height * 0.5
-    this.speedX = Math.random() + 1
+    this.speedX = Math.random() + 1 + this.game.difficult * 2
     this.speedY = 0
     this.maxFrame = 3
     // const img = Math.random() > 0.5 ? 'enemy_fly' : 'enemy_bat'
@@ -100,7 +100,8 @@ export class ClimbingEnemy extends Enemy {
     img.src = './enemies/enemy_spider.png'
     this.image = img
     this.speedX = 0
-    this.speedY = Math.random() > 0.5 ? 1 : -1
+    //this.speedY = Math.random() > 0.5 ? 1 : -1
+    this.speedY = Math.random() > 0.5 ? this.game.difficult + 1 : -this.game.difficult - 1
     this.maxFrame = 2
   }
   update(deltaTime) {

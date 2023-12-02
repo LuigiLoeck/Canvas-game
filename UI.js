@@ -12,7 +12,7 @@ export class UI {
       context.fillStyle = '#000b'
       context.fillRect(0, 0, this.game.width, this.game.height)
       context.fillStyle = '#fff'
-      context.fillText('Goal: 25 points', this.game.width / 2, this.game.height / 2)
+      context.fillText('Goal: 35 points', this.game.width / 2, this.game.height / 2)
     }
     context.font = `${this.fontSize}px ${this.fontFamily}`
     context.textAlign = 'left'
@@ -24,7 +24,7 @@ export class UI {
     
     //tempo
     context.textAlign = 'right'
-    context.fillText(`Game Time: ${23 - Math.floor(this.game.time / 1000)}`, this.game.width - 20, 50)
+    context.fillText(`Game Time: ${(this.game.maxTime/1000) - Math.floor(this.game.time / 1000)}`, this.game.width - 20, 50)
 
     //game over
     if (this.game.gameOver){
@@ -34,7 +34,7 @@ export class UI {
       context.fillStyle = '#000b'
       context.fillRect(0, 0, this.game.width, this.game.height)
       context.fillStyle = '#fff'
-      if (this.game.score > 25){
+      if (this.game.score > 35){
         context.fillText('Victory!', this.game.width / 2, this.game.height / 2)
         this.game.sound.win.play()
       } else {
