@@ -35,9 +35,9 @@
  O jogo foi desenvolvido com base no meu conhecimento, junto com a ajuda de videos do youtube, sendo os principais listados abaixo:
 
  Base do jogo:
- https://www.youtube.com/watch?v=c-1dBd1_G8A
- https://www.youtube.com/watch?v=lqNztI7BMf8
+ - https://www.youtube.com/watch?v=c-1dBd1_G8A
+ - https://www.youtube.com/watch?v=lqNztI7BMf8
 
  Parallax:
- https://www.youtube.com/watch?v=4wz1zrbTAo0
+ - https://www.youtube.com/watch?v=4wz1zrbTAo0
 
